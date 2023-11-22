@@ -1,8 +1,12 @@
 
 
+import 'package:dating_app/page/auth/login_page.dart';
 import 'package:dating_app/utils/dimensions.dart';
+import 'package:dating_app/widget/custom_button_widget.dart';
 import 'package:dating_app/widget/custom_text_field.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({super.key});
@@ -225,6 +229,349 @@ class _RegisterPageState extends State<RegisterPage> {
 
               SizedBox(height: Dimensions.height10*2),
 
+
+
+              //**************** DIŞ GÖRÜNÜŞ ***************/
+
+              Text(
+                "Dış Görünüş",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: Dimensions.height10*2,
+                  fontWeight: FontWeight.bold
+                ),
+              ),
+
+              SizedBox(height: Dimensions.height10),
+
+              //Height
+              SizedBox(
+                width: Dimensions.screenWidth,
+                child: CustomTextFieldWidget(
+                  textEditingController: heightTextController,
+                  text: "Boy",
+                  icon: Icons.insert_chart,
+                  isObscure: false,
+                ),
+              ),
+
+              SizedBox(height: Dimensions.height5),
+
+              //weight
+              SizedBox(
+                width: Dimensions.screenWidth,
+                child: CustomTextFieldWidget(
+                  textEditingController: weightTextController,
+                  text: "Kilo",
+                  icon: Icons.table_chart,
+                  isObscure: false,
+                ),
+              ),
+
+              SizedBox(height: Dimensions.height5),
+
+              //vücut tipi
+              SizedBox(
+                width: Dimensions.screenWidth,
+                child: CustomTextFieldWidget(
+                  textEditingController: bodyTypeTextController,
+                  text: "Vücut Tipi",
+                  icon: Icons.type_specimen,
+                  isObscure: false,
+                ),
+              ),
+
+              SizedBox(height: Dimensions.height10*2),
+
+
+               //**************** HAYAT TARZI ***************/
+
+              Text(
+                "Hayat Tarzı",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: Dimensions.height10*2,
+                  fontWeight: FontWeight.bold
+                ),
+              ),
+
+              SizedBox(height: Dimensions.height10),
+
+              // içiyor mu
+              SizedBox(
+                width: Dimensions.screenWidth,
+                child: CustomTextFieldWidget(
+                  textEditingController: drinkTextController,
+                  text: "İçki içiyor musun?",
+                  icon: Icons.local_drink,
+                  isObscure: false,
+                ),
+              ),
+
+              SizedBox(height: Dimensions.height5),
+
+              //sigara 
+              SizedBox(
+                width: Dimensions.screenWidth,
+                child: CustomTextFieldWidget(
+                  textEditingController: smokeTextController,
+                  text: "Sigara içiyor musun?",
+                  icon: Icons.smoking_rooms_rounded,
+                  isObscure: false,
+                ),
+              ),
+
+              SizedBox(height: Dimensions.height5),
+
+              //medeni durumu
+              SizedBox(
+                width: Dimensions.screenWidth,
+                child: CustomTextFieldWidget(
+                  textEditingController: martialStatusTextController,
+                  text: "Medeni Durum",
+                  icon: CupertinoIcons.person_2,
+                  isObscure: false,
+                ),
+              ),
+
+               SizedBox(height: Dimensions.height5),
+
+              //Çocuk var mı?
+              SizedBox(
+                width: Dimensions.screenWidth,
+                child: CustomTextFieldWidget(
+                  textEditingController: haveChildrenTextController,
+                  text: "Çocuk var mı?",
+                  icon: CupertinoIcons.person_3_fill,
+                  isObscure: false,
+                ),
+              ),
+
+               SizedBox(height: Dimensions.height5),
+
+              //meslek
+              SizedBox(
+                width: Dimensions.screenWidth,
+                child: CustomTextFieldWidget(
+                  textEditingController: professionalTextController,
+                  text: "Meslek",
+                  icon: Icons.business_center,
+                  isObscure: false,
+                ),
+              ),
+
+               SizedBox(height: Dimensions.height5),
+
+              //çalışma durumu
+              SizedBox(
+                width: Dimensions.screenWidth,
+                child: CustomTextFieldWidget(
+                  textEditingController: employmentStatusTextController,
+                  text: "Çalışma Durumu",
+                  icon: CupertinoIcons.rectangle_stack_person_crop_fill,
+                  isObscure: false,
+                ),
+              ),
+
+               SizedBox(height: Dimensions.height5),
+
+              //maaş
+              SizedBox(
+                width: Dimensions.screenWidth,
+                child: CustomTextFieldWidget(
+                  textEditingController: incomeTextController,
+                  text: "Maaş",
+                  icon: CupertinoIcons.money_dollar,
+                  isObscure: false,
+                ),
+              ),
+
+               SizedBox(height: Dimensions.height5),
+
+              //yaşam durumu
+              SizedBox(
+                width: Dimensions.screenWidth,
+                child: CustomTextFieldWidget(
+                  textEditingController: livingSituationTextController,
+                  text: "Yaşam Durumu",
+                  icon: CupertinoIcons.person_2_square_stack,
+                  isObscure: false,
+                ),
+              ),
+
+               SizedBox(height: Dimensions.height5),
+
+              //başka yere taşınma durumu
+              SizedBox(
+                width: Dimensions.screenWidth,
+                child: CustomTextFieldWidget(
+                  textEditingController: willingToRelocateTextController,
+                  text: "Başka yere taşınmak ister misiniz?",
+                  icon: CupertinoIcons.arrow_right_arrow_left,
+                  isObscure: false,
+                ),
+              ),
+
+               SizedBox(height: Dimensions.height5),
+
+              //aradığınız ilişki nedir
+              SizedBox(
+                width: Dimensions.screenWidth,
+                child: CustomTextFieldWidget(
+                  textEditingController: relationshipYouAreLookingForTextController,
+                  text: "Aradığınız ilişki nedir?",
+                  icon: CupertinoIcons.person_2,
+                  isObscure: false,
+                ),
+              ),
+
+              SizedBox(height: Dimensions.height10*2),
+
+              //**************** KÜLTÜREL DEĞERLER ***************/
+
+              Text(
+                "Kültürel Değerler",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: Dimensions.height10*2,
+                  fontWeight: FontWeight.bold
+                ),
+              ),
+
+              SizedBox(height: Dimensions.height10),
+
+              // vatandaşlık
+              SizedBox(
+                width: Dimensions.screenWidth,
+                child: CustomTextFieldWidget(
+                  textEditingController: nationalityTextController,
+                  text: "Vatandaşlık",
+                  icon: Icons.flag,
+                  isObscure: false,
+                ),
+              ),
+
+              SizedBox(height: Dimensions.height5),
+
+              //Eğitim 
+              SizedBox(
+                width: Dimensions.screenWidth,
+                child: CustomTextFieldWidget(
+                  textEditingController: educationTextController,
+                  text: "Eğitim",
+                  icon: Icons.history_edu,
+                  isObscure: false,
+                ),
+              ),
+
+              SizedBox(height: Dimensions.height5),
+
+              //Hangi dili konuşuyorsun
+              SizedBox(
+                width: Dimensions.screenWidth,
+                child: CustomTextFieldWidget(
+                  textEditingController: languageSpokenTextController,
+                  text: "Hangi dili konuşuyorsun?",
+                  icon: Icons.record_voice_over,
+                  isObscure: false,
+                ),
+              ),
+
+               SizedBox(height: Dimensions.height5),
+
+              //din
+              SizedBox(
+                width: Dimensions.screenWidth,
+                child: CustomTextFieldWidget(
+                  textEditingController: religionTextController,
+                  text: "Din",
+                  icon: Icons.panorama_fish_eye_sharp,
+                  isObscure: false,
+                ),
+              ),
+
+               SizedBox(height: Dimensions.height5),
+
+
+               //etnik köken
+              SizedBox(
+                width: Dimensions.screenWidth,
+                child: CustomTextFieldWidget(
+                  textEditingController: ethnicityTextController,
+                  text: "Etnik Köken",
+                  icon: CupertinoIcons.eye,
+                  isObscure: false,
+                ),
+              ),
+
+              SizedBox(height: Dimensions.height10*2),
+
+
+                            //login buton
+            //  Container(
+            //   width: Dimensions.screenWidth-15,
+            //   height: Dimensions.height10*5,
+            //   decoration: const BoxDecoration(
+            //     color: Colors.black,
+            //     borderRadius: BorderRadius.all(Radius.circular(12)),
+            //     boxShadow: [
+            //       BoxShadow(color: Color.fromRGBO(240, 17, 91, 1),offset: Offset(2, 0),blurRadius: 10),
+            //       BoxShadow(color: Color.fromRGBO(240, 141, 174, 1),offset: Offset(0, 2),blurRadius: 10),
+            //     ]
+            //   ),
+            //   child: InkWell(
+            //     onTap: () {
+                 
+            //     },
+            //     child: Center(
+            //       child: Text(
+            //         "Giriş Yap", 
+            //         style: TextStyle(
+            //           fontSize: Dimensions.height10*2,
+            //           color: Colors.white,
+            //           fontWeight: FontWeight.bold),
+            //       ),
+            //     ),
+            //   ),
+            //  ),
+              CustomButtonWidget(text: "Kayıt Ol"),
+
+              SizedBox(height: Dimensions.height10*1.5),
+
+             //Hesabın var mı butonu
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "Zaten bir hesabınız var mı??",
+                    style: TextStyle(
+                    fontSize: Dimensions.height10*1.6,
+                    color: Colors.grey
+                  ),
+                ),
+                SizedBox(width: Dimensions.width5),
+                InkWell(
+                  onTap: () {
+                     Get.to(()=>LoginPage());
+                  },
+                  child:Text(
+                  "Giriş Yap",
+                  style: TextStyle(
+                    fontSize: Dimensions.height10*1.8,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold),
+                  ),
+                )],
+              ),
+           
+              SizedBox(height: Dimensions.height10*2),
+
+              showProgressBar == true 
+               ? CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(Colors.pink),)
+               : Container(),  
+
+              SizedBox(height: Dimensions.height10*3),
+             
             ],
           ),
         ),

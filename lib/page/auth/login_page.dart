@@ -1,6 +1,7 @@
 
 import 'package:dating_app/page/auth/register_page.dart';
 import 'package:dating_app/utils/dimensions.dart';
+import 'package:dating_app/widget/custom_button_widget.dart';
 import 'package:dating_app/widget/custom_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -63,32 +64,33 @@ class _LoginPageState extends State<LoginPage> {
              SizedBox(height: Dimensions.height10*2),
 
              //login buton
-             Container(
-              width: Dimensions.screenWidth-15,
-              height: Dimensions.height10*5,
-              decoration: const BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.all(Radius.circular(12)),
-                boxShadow: [
-                  BoxShadow(color: Colors.pinkAccent,offset: Offset(1, 0),blurRadius: 3),
-                  BoxShadow(color: Colors.pinkAccent,offset: Offset(0, 1),blurRadius: 3),
-                ]
-              ),
-              child: InkWell(
-                onTap: () {
+            //  Container(
+            //   width: Dimensions.screenWidth-15,
+            //   height: Dimensions.height10*5,
+            //   decoration: const BoxDecoration(
+            //     color: Colors.black,
+            //     borderRadius: BorderRadius.all(Radius.circular(12)),
+            //     boxShadow: [
+            //       BoxShadow(color: Color.fromRGBO(240, 17, 91, 1),offset: Offset(2, 0),blurRadius: 10),
+            //       BoxShadow(color: Color.fromRGBO(240, 141, 174, 1),offset: Offset(0, 2),blurRadius: 10),
+            //     ]
+            //   ),
+            //   child: InkWell(
+            //     onTap: () {
                  
-                },
-                child: Center(
-                  child: Text(
-                    "Giriş Yap", 
-                    style: TextStyle(
-                      fontSize: Dimensions.height10*2,
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold),
-                  ),
-                ),
-              ),
-             ),
+            //     },
+            //     child: Center(
+            //       child: Text(
+            //         "Giriş Yap", 
+            //         style: TextStyle(
+            //           fontSize: Dimensions.height10*2,
+            //           color: Colors.white,
+            //           fontWeight: FontWeight.bold),
+            //       ),
+            //     ),
+            //   ),
+            //  ),
+            CustomButtonWidget(text: "Giriş Yap"),
 
              SizedBox(height: Dimensions.height10*1.5),
 
@@ -106,7 +108,7 @@ class _LoginPageState extends State<LoginPage> {
                 SizedBox(width: Dimensions.width5),
                 InkWell(
                   onTap: () {
-                     Get.to(RegisterPage());
+                     Get.to(()=>RegisterPage());
                   },
                   child:Text(
                   "Kayıt Ol",

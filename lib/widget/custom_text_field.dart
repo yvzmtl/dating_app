@@ -1,4 +1,5 @@
 
+import 'package:dating_app/utils/app_colors.dart';
 import 'package:dating_app/utils/dimensions.dart';
 import 'package:flutter/material.dart';
 
@@ -34,11 +35,11 @@ class CustomTextFieldWidget extends StatelessWidget {
           labelStyle: TextStyle(fontSize: Dimensions.height10*1.8),
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(Dimensions.height10*0.6),
-            borderSide: BorderSide(color: Colors.grey)
+            borderSide: BorderSide(color: AppColor.mainColorGrey)
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(Dimensions.height10*0.6),
-            borderSide: BorderSide(color: Colors.grey)
+            borderSide: BorderSide(color: AppColor.mainColorGrey)
           ),
         ),
       ),

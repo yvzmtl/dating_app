@@ -15,9 +15,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: 'Dating App',
-      theme: ThemeData.dark().copyWith(
+      theme: 
+      ThemeData.dark().copyWith(
         scaffoldBackgroundColor: Colors.black
       ),
+      
+      
       // ThemeData(
       //   colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       //   useMaterial3: true,
