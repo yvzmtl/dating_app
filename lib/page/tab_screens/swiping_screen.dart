@@ -8,7 +8,6 @@ import 'package:flutter_dating_app/controller/profile_controller.dart';
 import 'package:flutter_dating_app/page/tab_screens/user_details_screen.dart';
 import 'package:flutter_dating_app/utils/api.dart';
 import 'package:flutter_dating_app/utils/dimensions.dart';
-import 'package:flutter_dating_app/widget/custom_button_widget.dart';
 import 'package:flutter_dating_app/widget/custom_text_widget.dart';
 import 'package:get/get.dart';
 import 'package:url_launcher/url_launcher.dart';
